@@ -134,3 +134,16 @@ switch (cliente)
         }
         break;
 }
+if (fraude == 2 || fraude == 3)
+{
+    Console.WriteLine("No se aplicará el descuento.");
+    descuento = 0;
+    recargos = monto + (monto * 0.20);
+    monto = recargos;
+
+}
+else
+{
+    Console.WriteLine("Puede continuar con el proceso de pago.");
+}
+
