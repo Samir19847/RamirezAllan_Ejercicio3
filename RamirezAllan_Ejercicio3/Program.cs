@@ -114,18 +114,18 @@ switch (cliente)
     case 4:
         if (pago == 1)
         {
-            recargos = monto + (monto * 0.05);
-            monto = recargos;
+            descuento = monto - (monto * 0.05);
+            monto = descuento;
         }
         else if (pago == 2)
         {
-            recargos = monto + (monto * 0.03);
-            monto = recargos;
+            descuento = monto - (monto * 0.03);
+            monto = descuento;
         }
         else if (pago == 3)
         {
-            recargos = monto + (monto * 0.01);
-            monto = recargos;
+            descuento = monto - (monto * 0.01);
+            monto = descuento;
         }
         break;
     default:
