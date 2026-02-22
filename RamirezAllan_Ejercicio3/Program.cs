@@ -57,3 +57,29 @@ Console.WriteLine("1. Ninguno");
 Console.WriteLine("2. Cupón inválido repetido");
 Console.WriteLine("3. Pagos rechazados múltiples");
 int fraude = int.Parse(Console.ReadLine());
+switch (cliente)
+{
+    case 1:
+        {
+
+        }
+        break;
+    case 2:
+        {
+
+        }
+        break;
+    case 3:
+        {
+
+        }
+        break;
+    case 4:
+        {
+
+        }
+        break;
+    default:
+        Console.WriteLine("Tipo de cliente no válido.");
+        break;
+}
