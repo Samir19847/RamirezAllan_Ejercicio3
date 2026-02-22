@@ -60,26 +60,77 @@ int fraude = int.Parse(Console.ReadLine());
 switch (cliente)
 {
     case 1:
+        if (pago == 1)
         {
-
+            descuento = monto - (monto * 0.10);
+            monto = descuento;
+        }
+        else if (pago == 2)
+        {
+            descuento = monto - (monto * 0.07);
+            monto = descuento;
+        }
+        else if (pago == 3)
+        {
+            descuento = monto - (monto * 0.05);
+            monto = descuento;
         }
         break;
     case 2:
+        if (pago == 1)
         {
-
+            descuento = monto - (monto * 0.07);
+            monto = descuento;
+        }
+        else if (pago == 2)
+        {
+            descuento = monto - (monto * 0.05);
+            monto = descuento;
+        }
+        else if (pago == 3)
+        {
+            descuento = monto - (monto * 0.03);
+            monto = descuento;
         }
         break;
     case 3:
+        if (pago == 1)
         {
+            descuento = monto - (monto * 0.05);
+            monto = descuento;
 
+        }
+        else if (pago == 2)
+        {
+            descuento = monto - (monto * 0.03);
+            monto = descuento;
+        }
+        else if (pago == 3)
+        {
+            descuento = monto - (monto * 0.01);
+            monto = descuento;
         }
         break;
     case 4:
+        if (pago == 1)
         {
-
+            recargos = monto + (monto * 0.05);
+            monto = recargos;
+        }
+        else if (pago == 2)
+        {
+            recargos = monto + (monto * 0.03);
+            monto = recargos;
+        }
+        else if (pago == 3)
+        {
+            recargos = monto + (monto * 0.01);
+            monto = recargos;
         }
         break;
     default:
-        Console.WriteLine("Tipo de cliente no válido.");
+        {
+            Console.WriteLine("Tipo de cliente no válido.");
+        }
         break;
 }
