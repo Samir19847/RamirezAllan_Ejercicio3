@@ -52,7 +52,7 @@ else
     Console.WriteLine("No se aplicará ningún descuento por cupón.");
 }
 Console.WriteLine();
-Console.WriteLine("Reporte antifraude):");
+Console.WriteLine("Reporte antifraude:");
 Console.WriteLine("1. Ninguno");
 Console.WriteLine("2. Cupón inválido repetido");
 Console.WriteLine("3. Pagos rechazados múltiples");
@@ -146,4 +146,7 @@ else
 {
     Console.WriteLine("Puede continuar con el proceso de pago.");
 }
-
+Console.WriteLine();
+Console.WriteLine($"Descuento aplicado: {descuento:C2}");
+Console.WriteLine($"Recargos aplicados: {recargos:C2}");
+Console.WriteLine($"Monto final a pagar: {monto:C2}");
